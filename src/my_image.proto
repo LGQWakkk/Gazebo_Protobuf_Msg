@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message MyImage {
+  uint32 width = 1; // Image width (number of columns)
+  uint32 height = 2; // Image height (number of rows)
+  bytes data = 3; // Actual data, size is (step * rows)
+}
